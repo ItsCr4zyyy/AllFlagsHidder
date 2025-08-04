@@ -30,7 +30,7 @@ Ideal for clean menus, removing attribute lines, enchant glows, or technical too
 4. Start the server
 
 
-## License
+## ⚖️ License
 
 This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.  
 You are free to use, share, and modify the code for non-commercial purposes. Commercial use is not allowed.
