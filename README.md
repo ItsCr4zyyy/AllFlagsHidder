@@ -8,7 +8,6 @@ Ideal for clean menus, removing attribute lines, enchant glows, or technical too
 
 - 🧍 Automatically hides all item flags in the **player inventory** (when pressing `E`)
 - 🧭 Hides flags in **custom GUI inventories** based on GUI title
-- 🧩 Requires [ProtocolLib](https://www.spigotmc.org/resources/1997/)
 
 
 ## 🛠 Requirements
