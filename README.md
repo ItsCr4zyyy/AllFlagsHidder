@@ -1,3 +1,31 @@
+# AllFlagsHidder
+
+A simple Minecraft plugin that hides all item flags in player inventories and custom GUIs.  
+Ideal for clean menus, removing attribute lines, enchant glows, or technical tooltips.
+
+## ✅ Features
+
+- 🧍 Automatically hides all item flags in the **player inventory** (when pressing `E`)
+- 🧭 Hides flags in **custom GUI inventories** based on GUI title
+- 🧩 Requires [ProtocolLib](https://www.spigotmc.org/resources/1997/)
+
+## 🛠 Requirements
+
+- **Minecraft 1.20.5 and above**
+- **Java 21**
+- **ProtocolLib** (must be installed)
+
+## 💬 Commands & 🔐 Permissions
+
+- `/afh reload` (afh.reload) – reloads the plugin configuration
+
+## 📥 Installation
+
+1. Download the plugin `.jar` file
+2. Download and install **ProtocolLib**
+3. Place both into your server's `/plugins` folder
+4. Start the server
+
 ## License
 
 This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.  
