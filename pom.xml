@@ -6,7 +6,7 @@
 
     <groupId>org.wcrazy</groupId>
     <artifactId>AllFlagsHidder</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -32,7 +32,6 @@
             <version>1.21.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>com.comphenix.protocol</groupId>
             <artifactId>ProtocolLib</artifactId>
@@ -40,6 +39,4 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
-
 </project>

@@ -28,7 +28,7 @@ public class AFHCommand implements CommandExecutor {
             plugin.reloadConfig();
             plugin.loadConfigValues();
             sender.sendMessage(formatHexColors("&aAllFlagsHidder-" + plugin.pluginVersion + " config was reloaded successfully."));
-            plugin.getLogger().info(formatHexColors("&fConfig was reloaded by &2" + sender.getName()));
+            plugin.getLogger().info("Config was reloaded by " + sender.getName());
             return true;
         }
 

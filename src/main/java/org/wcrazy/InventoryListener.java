@@ -44,7 +44,7 @@ public class InventoryListener implements Listener {
             public void onPacketReceiving(PacketEvent event) {
                 Player player = event.getPlayer();
                 Bukkit.getScheduler().runTask(plugin, () -> {
-                    if (plugin.getConfig().getBoolean("hide-inventory", false)) {
+                    if (plugin.getConfig().getBoolean("hide-inventory")) {
                         hideFlagsInInventory(player.getInventory());
                     }
                 });
@@ -67,6 +67,8 @@ public class InventoryListener implements Listener {
     }
 
     public void hideFlagsInInventory(Inventory inv) {
+        List<String> flagNames = plugin.getConfig().getStringList("flags-to-hide");
+
         for (int i = 0; i < inv.getSize(); i++) {
             ItemStack item = inv.getItem(i);
             if (item == null || item.getType().isAir()) continue;
@@ -84,18 +86,16 @@ public class InventoryListener implements Listener {
                     new AttributeModifier(UUID.randomUUID(), "dummy_attack_speed", 0.0,
                             AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
 
-            meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-            meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
-            meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
-            meta.addItemFlags(ItemFlag.HIDE_ADDITIONAL_TOOLTIP);
-            meta.addItemFlags(ItemFlag.HIDE_PLACED_ON);
-            meta.addItemFlags(ItemFlag.HIDE_DYE);
-            meta.addItemFlags(ItemFlag.HIDE_STORED_ENCHANTS);
-            meta.addItemFlags(ItemFlag.HIDE_ARMOR_TRIM);
-            meta.addItemFlags(ItemFlag.HIDE_ITEM_SPECIFICS);
+            for (String flagName : flagNames) {
+                try {
+                    ItemFlag flag = ItemFlag.valueOf(flagName.toUpperCase());
+                    meta.addItemFlags(flag);
+                } catch (IllegalArgumentException e) {}
+            }
 
             item.setItemMeta(meta);
             inv.setItem(i, item);
         }
     }
+
 }

@@ -4,3 +4,12 @@ hidden-gui-titles:
   - "&8Server Selector"
   - "&8Cosmetics"
   - "&#c726e0Random menu"
+flags-to-hide:
+  - HIDE_ENCHANTS
+  - HIDE_ATTRIBUTES
+  - HIDE_UNBREAKABLE
+  - HIDE_ADDITIONAL_TOOLTIP
+  - HIDE_PLACED_ON
+  - HIDE_DYE
+  - HIDE_STORED_ENCHANTS
+  - HIDE_ITEM_SPECIFICS
