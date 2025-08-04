@@ -1,0 +1,6 @@
+no-permission: "&cYou do not have permission to use this command."
+hide-inventory: true
+hidden-gui-titles:
+  - "&8Server Selector"
+  - "&8Cosmetics"
+  - "&#c726e0Random menu"
