@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20cf28f1-6936-4ceb-a165-9cc3908fa992" name="Changes" comment="">
-      <change afterPath="E:/AllFlagsHidder/.idea/vcs.xml" afterDir="false" />
       <change beforePath="E:/AllFlagsHidder/.idea/workspace.xml" beforeDir="false" afterPath="E:/AllFlagsHidder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="E:/AllFlagsHidder/src/main/java/org/wcrazy/InventoryListener.java" beforeDir="false" afterPath="E:/AllFlagsHidder/src/main/java/org/wcrazy/InventoryListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
       <workItem from="1754243943105" duration="8610000" />
       <workItem from="1754316329538" duration="4297000" />
       <workItem from="1754324303971" duration="3432000" />
-      <workItem from="1754328264626" duration="761000" />
+      <workItem from="1754328264626" duration="2223000" />
     </task>
     <servers />
   </component>
