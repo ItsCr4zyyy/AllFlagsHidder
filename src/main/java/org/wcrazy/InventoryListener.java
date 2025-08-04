@@ -39,6 +39,7 @@ public class InventoryListener implements Listener {
         protocolManager.addPacketListener(new PacketAdapter(plugin, ListenerPriority.NORMAL,
                 PacketType.Play.Client.WINDOW_CLICK) {
 
+
             @Override
             public void onPacketReceiving(PacketEvent event) {
                 Player player = event.getPlayer();
