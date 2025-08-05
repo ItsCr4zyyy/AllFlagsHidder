@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20cf28f1-6936-4ceb-a165-9cc3908fa992" name="Changes" comment="Update">
+      <change afterPath="E:/AllFlagsHidder/src/main/java/org/wcrazy/Updater.java" afterDir="false" />
       <change beforePath="E:/AllFlagsHidder/.idea/workspace.xml" beforeDir="false" afterPath="E:/AllFlagsHidder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="E:/AllFlagsHidder/src/main/java/org/wcrazy/AFHCommand.java" beforeDir="false" afterPath="E:/AllFlagsHidder/src/main/java/org/wcrazy/AFHCommand.java" afterDir="false" />
+      <change beforePath="E:/AllFlagsHidder/pom.xml" beforeDir="false" afterPath="E:/AllFlagsHidder/pom.xml" afterDir="false" />
+      <change beforePath="E:/AllFlagsHidder/src/main/java/org/wcrazy/AllFlagsHidder.java" beforeDir="false" afterPath="E:/AllFlagsHidder/src/main/java/org/wcrazy/AllFlagsHidder.java" afterDir="false" />
+      <change beforePath="E:/AllFlagsHidder/src/main/java/org/wcrazy/InventoryListener.java" beforeDir="false" afterPath="E:/AllFlagsHidder/src/main/java/org/wcrazy/InventoryListener.java" afterDir="false" />
+      <change beforePath="E:/AllFlagsHidder/src/main/resources/config.yml" beforeDir="false" afterPath="E:/AllFlagsHidder/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +77,8 @@
       <workItem from="1754316329538" duration="4297000" />
       <workItem from="1754324303971" duration="3432000" />
       <workItem from="1754328264626" duration="5802000" />
-      <workItem from="1754336648303" duration="116000" />
+      <workItem from="1754336648303" duration="174000" />
+      <workItem from="1754414268435" duration="2681000" />
     </task>
     <task id="LOCAL-00001" summary="Upload">
       <option name="closed" value="true" />
@@ -99,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754336164669</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update">
+      <option name="closed" value="true" />
+      <created>1754336801097</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1754336801097</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

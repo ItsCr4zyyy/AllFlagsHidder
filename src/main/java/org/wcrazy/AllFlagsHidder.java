@@ -21,6 +21,7 @@ public class AllFlagsHidder extends JavaPlugin {
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new InventoryListener(this), this);
         getCommand("allflagshidder").setExecutor(new AFHCommand(this));
+        new Updater(this, "ItsCr4zyyy", "AllFlagsHidder").checkForUpdate();
     }
 
     @Override

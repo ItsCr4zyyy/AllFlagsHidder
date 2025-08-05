@@ -76,18 +76,19 @@ public class InventoryListener implements Listener {
             ItemMeta meta = item.getItemMeta();
             if (meta == null) continue;
 
-            meta.removeAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE);
-            meta.removeAttributeModifier(Attribute.GENERIC_ATTACK_SPEED);
-
-            meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE,
-                    new AttributeModifier(UUID.randomUUID(), "dummy_attack_damage", 0.0,
-                            AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
-            meta.addAttributeModifier(Attribute.GENERIC_ATTACK_SPEED,
-                    new AttributeModifier(UUID.randomUUID(), "dummy_attack_speed", 0.0,
-                            AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
-
             for (String flagName : flagNames) {
                 try {
+                    if (flagName.toUpperCase().equals("HIDE_ITEM_SPECIFICS")) {
+                        meta.removeAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE);
+                        meta.removeAttributeModifier(Attribute.GENERIC_ATTACK_SPEED);
+
+                        meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE,
+                                new AttributeModifier(UUID.randomUUID(), "dummy_attack_damage", 0.0,
+                                        AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
+                        meta.addAttributeModifier(Attribute.GENERIC_ATTACK_SPEED,
+                                new AttributeModifier(UUID.randomUUID(), "dummy_attack_speed", 0.0,
+                                        AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
+                    }
                     ItemFlag flag = ItemFlag.valueOf(flagName.toUpperCase());
                     meta.addItemFlags(flag);
                 } catch (IllegalArgumentException e) {}
