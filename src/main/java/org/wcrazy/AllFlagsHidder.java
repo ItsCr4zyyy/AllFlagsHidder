@@ -7,7 +7,6 @@ public class AllFlagsHidder extends JavaPlugin {
 
     String serverVersion = Bukkit.getBukkitVersion().split("-")[0];
     String pluginVersion = getDescription().getVersion();
-    private String noPerms;
 
     @Override
     public void onEnable() {
@@ -26,13 +25,5 @@ public class AllFlagsHidder extends JavaPlugin {
 
     @Override
     public void onDisable() {
-    }
-
-    public void loadConfigValues() {
-        this.noPerms = getConfig().getString("no-permission");
-    }
-
-    public String getNoPerms() {
-        return noPerms;
     }
 }

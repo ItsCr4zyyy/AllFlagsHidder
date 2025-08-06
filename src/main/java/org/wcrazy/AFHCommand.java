@@ -18,12 +18,11 @@ public class AFHCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!sender.hasPermission("afh.reload")) {
-            sender.sendMessage(formatHexColors(plugin.getNoPerms()));
+            sender.sendMessage(formatHexColors(plugin.getConfig().getString("no-permission")));
             return true;
         }
         if (args.length == 1 && args[0].equalsIgnoreCase("reload")) {
             plugin.reloadConfig();
-            plugin.loadConfigValues();
             sender.sendMessage(formatHexColors("&aAllFlagsHidder-" + plugin.pluginVersion + " config was reloaded successfully."));
             plugin.getLogger().info("Config was reloaded by " + sender.getName());
             return true;
