@@ -20,7 +20,7 @@ Ideal for clean menus, removing attribute lines, enchant glows, or technical too
 ## 💬 Commands & 🔐 Permissions
 
 - `/afh reload` (afh.reload) – reloads the plugin configuration
-- afh.notify - will notify you of updates after join
+- afh.notify – will notify you of updates after join
 
 
 ## 📥 Installation
