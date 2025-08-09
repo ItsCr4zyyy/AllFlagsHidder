@@ -15,6 +15,11 @@ public class Updater {
     private final String githubUser;
     private final String githubRepo;
 
+    private boolean updateAvailable = false;
+    private String latestVersion = null;
+    private String currentVersion = null;
+    private String releaseUrl = null;
+
     public Updater(JavaPlugin plugin, String githubUser, String githubRepo) {
         this.plugin = plugin;
         this.githubUser = githubUser;
@@ -44,11 +49,12 @@ public class Updater {
                 reader.close();
 
                 JSONObject release = new JSONObject(json.toString());
-                String latestVersion = release.getString("tag_name").replace("v", "").trim();
-                String currentVersion = plugin.getDescription().getVersion().trim();
-                String releaseUrl = release.getString("html_url");
+                latestVersion = release.getString("tag_name").replace("v", "").trim();
+                currentVersion = plugin.getDescription().getVersion().trim();
+                releaseUrl = release.getString("html_url");
 
                 if (!latestVersion.equalsIgnoreCase(currentVersion)) {
+                    updateAvailable = true;
                     plugin.getLogger().warning("=======================================");
                     plugin.getLogger().warning(plugin.getName() + " is outdated!");
                     plugin.getLogger().warning("Current version: " + currentVersion);
@@ -62,6 +68,22 @@ public class Updater {
                 e.printStackTrace();
             }
         });
+    }
+
+    public boolean isUpdateAvailable() {
+        return updateAvailable;
+    }
+
+    public String getLatestVersion() {
+        return latestVersion;
+    }
+
+    public String getCurrentVersion() {
+        return currentVersion;
+    }
+
+    public String getReleaseUrl() {
+        return releaseUrl;
     }
 }
 

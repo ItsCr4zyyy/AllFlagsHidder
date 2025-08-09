@@ -5,6 +5,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class AllFlagsHidder extends JavaPlugin {
 
+    private Updater updater;
+
     String serverVersion = Bukkit.getBukkitVersion().split("-")[0];
     String pluginVersion = getDescription().getVersion();
 
@@ -20,7 +22,10 @@ public class AllFlagsHidder extends JavaPlugin {
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new InventoryListener(this), this);
         getCommand("allflagshidder").setExecutor(new AFHCommand(this));
-        new Updater(this, "ItsCr4zyyy", "AllFlagsHidder").checkForUpdate();
+
+        updater = new Updater(this, "ItsCr4zyyy", "AllFlagsHidder");
+        updater.checkForUpdate();
+        getServer().getPluginManager().registerEvents(new JoinListener(updater, this), this);
     }
 
     @Override
