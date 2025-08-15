@@ -26,7 +26,7 @@ Ideal for clean menus, removing attribute lines, enchant glows, or technical too
 ## 📥 Installation
 
 1. Download the plugin `.jar` file
-2. Download and install **[ProtocolLib](https://www.spigotmc.org/resources/1997/)**
+2. Download **[ProtocolLib](https://www.spigotmc.org/resources/1997/)**
 3. Place both into your server's `/plugins` folder
 4. Start the server
 
