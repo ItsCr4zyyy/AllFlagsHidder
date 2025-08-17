@@ -28,7 +28,10 @@ public class AFHCommand implements CommandExecutor {
             return true;
         }
 
-        sender.sendMessage(formatHexColors("&eUsage: /allflagshidder reload"));
+        sender.sendMessage(formatHexColors("&8+------------------------------------+"));
+        sender.sendMessage(formatHexColors("&r &6&l★&r &fAllFlagsHidder commands:"));
+        sender.sendMessage(formatHexColors("&r &8➥ &e/allflagshidder reload"));
+        sender.sendMessage(formatHexColors("&8+------------------------------------+"));
         return true;
     }
 }

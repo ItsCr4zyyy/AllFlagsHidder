@@ -22,6 +22,7 @@ public class AllFlagsHidder extends JavaPlugin {
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new InventoryListener(this), this);
         getCommand("allflagshidder").setExecutor(new AFHCommand(this));
+        getCommand("allflagshidder").setTabCompleter(new AFHTabCompleter());
 
         updater = new Updater(this, "ItsCr4zyyy", "AllFlagsHidder");
         updater.checkForUpdate();

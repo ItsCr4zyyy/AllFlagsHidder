@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20cf28f1-6936-4ceb-a165-9cc3908fa992" name="Changes" comment="Update">
-      <change afterPath="E:/AllFlagsHidder/src/main/java/org/wcrazy/JoinListener.java" afterDir="false" />
       <change beforePath="E:/AllFlagsHidder/.idea/workspace.xml" beforeDir="false" afterPath="E:/AllFlagsHidder/.idea/workspace.xml" afterDir="false" />
       <change beforePath="E:/AllFlagsHidder/pom.xml" beforeDir="false" afterPath="E:/AllFlagsHidder/pom.xml" afterDir="false" />
+      <change beforePath="E:/AllFlagsHidder/src/main/java/org/wcrazy/AFHCommand.java" beforeDir="false" afterPath="E:/AllFlagsHidder/src/main/java/org/wcrazy/AFHCommand.java" afterDir="false" />
       <change beforePath="E:/AllFlagsHidder/src/main/java/org/wcrazy/AllFlagsHidder.java" beforeDir="false" afterPath="E:/AllFlagsHidder/src/main/java/org/wcrazy/AllFlagsHidder.java" afterDir="false" />
-      <change beforePath="E:/AllFlagsHidder/src/main/java/org/wcrazy/Updater.java" beforeDir="false" afterPath="E:/AllFlagsHidder/src/main/java/org/wcrazy/Updater.java" afterDir="false" />
       <change beforePath="E:/AllFlagsHidder/src/main/resources/plugin.yml" beforeDir="false" afterPath="E:/AllFlagsHidder/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +80,15 @@
       <workItem from="1754414268435" duration="4474000" />
       <workItem from="1754495986805" duration="2789000" />
       <workItem from="1754653073423" duration="816000" />
-      <workItem from="1754740210044" duration="2761000" />
+      <workItem from="1754740210044" duration="3531000" />
+      <workItem from="1754940903721" duration="726000" />
+      <workItem from="1754978156592" duration="85000" />
+      <workItem from="1754980393336" duration="610000" />
+      <workItem from="1754981131529" duration="1243000" />
+      <workItem from="1755081476008" duration="39000" />
+      <workItem from="1755081521308" duration="5000" />
+      <workItem from="1755440406958" duration="19000" />
+      <workItem from="1755451408768" duration="86000" />
     </task>
     <task id="LOCAL-00001" summary="Upload">
       <option name="closed" value="true" />
@@ -131,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754497543357</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update">
+      <option name="closed" value="true" />
+      <created>1754749487996</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1754749487996</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
