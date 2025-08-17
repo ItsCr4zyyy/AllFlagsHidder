@@ -1,6 +1,6 @@
 # AllFlagsHidder
 
-A simple Minecraft plugin that hides all item flags in player inventories and custom GUIs.  
+A simple plugin that hides all item flags in player inventories and custom GUIs.  
 Ideal for clean menus, removing attribute lines, enchant glows, or technical tooltips.
 
 
