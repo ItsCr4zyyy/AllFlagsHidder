@@ -23,7 +23,7 @@ public class JoinListener implements Listener {
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
 
-        if (player.hasPermission("afh.notify") && updater.isUpdateAvailable() && plugin.getConfig().getBoolean("updater")) {
+        if (player.hasPermission("afh.notify") && updater.isUpdateAvailable() && plugin.getConfig().getBoolean("updater", true)) {
             Bukkit.getScheduler().runTaskLaterAsynchronously(
                     Bukkit.getPluginManager().getPlugin("AllFlagsHidder"),
                     () -> {
